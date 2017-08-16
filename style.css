@@ -1,0 +1,45 @@
+*{
+        margin-top: 2px;
+        margin-left:2px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        padding:10px;
+       background-color: #f0f0f0;
+       vertical-align: center;
+
+
+}
+
+
+.grid{
+	
+          display:grid;
+           grid-gap:30px;
+           grid-template-columns: 80%  80%;
+           grid-template-rows:500px;
+           grid-template-areas:"menu01" "menu02" ;
+
+
+}
+
+@media screen and (min-width:960px){
+.grid{
+           display:grid;
+           grid-gap:30px;
+           grid-template-columns: 65% 25%;
+           grid-template-rows:500px;
+           grid-template-areas:"menu01 menu02" ;
+
+
+}
+}
+
+.menu01{
+	grid-area: menu01;
+	background-color: white;
+}
+
+.menu02{
+	grid-area: menu02;
+	background-color: white;
+}
